@@ -7,5 +7,25 @@
 
   <h1> Welcome to my page </h1>
 
-</body>
+  <button onclick= "sayHello(this)", style="color: green; background-color:navy" >Hi</button>
+<br>
+<input type="number" id = field>
+<br>
+<button onclick = "Submit()">Submit</button>
+<img id= d2pic >
+
+<script>
+let state = 1
+function sayHello(button) {
+    if(state ==1){
+        button.innerHTML = "hello"
+        state = 0
+    } else if(state == 0) {
+        button.innerHTML = "hi"
+        state = 1
+    }
+}
+
+  
+  </body>
 </html>
